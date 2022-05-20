@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HENDRA</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	
+		<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous"
+	  />
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+	
+	
+	</head>
+	<body>
+
+
+		<!-- bagian banner -->
+		<section class="banner">
+			<div class="container">
+				<div class="banner-left">
+					<img src="img/profil.jpg">
+					<h2>Hai...<br>
+						Saya adalah seorang <span class="efek-ngetik"></span></h2>
+					<p>Selamat datang di website portfolio saya!</p><br>
+					<a href="detail/detail.html" class="btn btn-primary">Kenali saya lebih jauh</a>	  
+				</div>
+			</div>
+		</section>
+		<div id="app">
+
+		<!-- bagian about -->
+		<section id="about">
+			<div class="container">
+				<h3>Cerita Singkat</h3>
+
+				<p>{{header.cerita}}</p>
+				</div>			
+		</section>
+
+
+
+
+		<section id="portfolio">
+			<div class="container">
+				<h3>Hasil Karya</h3>
+				<div class="col-4">
+					<a href="detail.html">
+						<img src="img/novel1.jpg">
+				
+					</a>
+				</div>
+
+				<div class="col-4">
+					<a href="">
+						<img src="img/novel2.jpg">
+		
+					</a>
+				</div>
+
+				<div class="col-4">
+					<a href="">
+						<img src="img/novel3.jpg">
+				
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<div id="app">
+
+			  <div class="container h-100">
+				<div class="row h-100 align-items-center">
+				  <div class="col-6 text-white">
+					<h1>{{header.title}}</h1>
+					<p>{{header.description}}</p>
+
+				  </div>
+				  <div class="col-6 align-self-end text-center">
+					<img v-bind:src="header.imageProfile">
+				  </div>
+				</div>
+			  </div>   
+
+
+		</div>
+		<script src="js/script.js"></script>
+		<script src="https://unpkg.com/vue@3"></script>
+		<script src="vue.js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="json/get_json.js"></script>
+
+	</body>
+</html>
